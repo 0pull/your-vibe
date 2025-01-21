@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Зеленая страница</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Плеер -->
+    <div class="player">
+      <audio id="audio-player" controls>
+        <source src="" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио.
+      </audio>
+      <div class="player-controls">
+        <button id="prev-track">Трек назад</button>
+        <button id="play-pause">Пауза</button>
+        <button id="next-track">Трек вперед</button>
+      </div>
+      <div id="track-name">Название трека</div>
+    </div>
+
+    <!-- Пинг-понг -->
+    <div class="game">
+      <div id="score">0:0</div>
+      <canvas id="pong-game" width="600" height="400"></canvas>
+      <div class="mobile-controls">
+        <button id="left-btn">←</button>
+        <button id="right-btn">→</button>
+      </div>
+    </div>
+
+    <!-- ASCII-арт -->
+    <pre id="ascii-art"></pre>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
